@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript"> //dette er JavaScript
+    function visNavn() {
+        //siden det skal forandres, bruker vi datatypen let
+        let navnet = document.getElementById("inn").value;
+        alert(navnet)
+    }
+    </script>
+</head>
+<body>
+<h2>Oppgave 4</h2>
+<p>Endre oppgave 3 ved å legge ut en "pop-up/alert"-boks
+    som skal inneholde teksten fra input-feltet.</p>
+<p>Skriv inn navn:</p>
+<!--lage input-felt i en html-side-->
+<input type="text" onchange="visNavn()" id="inn"/>
+<div id="navn"></div>
+<!--lage JavaScriptet som leser dataene fra input-feltet-->
+
+
+</body>
+</html>
+

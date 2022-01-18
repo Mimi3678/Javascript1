@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        const antall = 1;
+        const info = "Du har trykket på knappen " + console.count(antall) +
+            " ganger.";
+
+        function visMelding() {
+            console.log(antall);
+            console.info(info);
+
+        }
+    </script>
+</head>
+<body>
+<h2>Oppgave 10</h2>
+<p>Endre oppgave 9 ved å legge til en melding til console slik at den viser
+    "Du har trykket på knappen X ganger" (hvor X er antall ganger knappen ble trykket på).</p>
+<button onclick="visMelding()">Trykk meg</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--JavaScript-->
+    <script type="text/javascript">
+        function visNavn() {
+            let navnet = document.getElementById("inn").value;
+            document.getElementById("navn").innerText = navnet;
+            navnet = navnet.fontcolor("red");
+            document.write(navnet);
+        }
+    </script>
+</head>
+<body>
+<h2>Oppgave 6</h2>
+<p>Utvid oppgave 3 ved å gi et farge til teksten som vises på blank side.</p>
+<p>Skriv inn navn:</p>
+<input type="text" onchange="visNavn()" id="inn"/>
+<div id="navn"></div>
+</body>
+</html>
