@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type="text/javascript">
-        function visNavn() {
-            <!--siden det skal forandres, bruker vi datatypen let -->
-            <!--lage JavaScriptet som leser dataene fra input-feltet-->
-            let navnet = document.getElementById("inn").value;
-            document.getElementById("navn").innerText = navnet;
-        }
+            function write(data){
+                document.write(data);
+            }
     </script>
 </head>
 <body>
-<h2>Oppgave 3</h2>
-<p>Lag et input-felt i en HTML-side. Lag et JavaScript som leser dataene fra
-    input-feltet når det er endringer i feltet (hendelsen "onChange")
-    og som skriver disse dataene ut på en blank side med "document.write".
-    Funksjonen som kalles ved "onChange" skal ta en inn-parameter,
-    som er verdien av input-feltet.</p>
-<p>Skriv inn navn:</p>
-<!--lage input-felt i en html-side-->
-<input type="text" onchange="visNavn()" id="inn"/>
-<div id="navn"></div>
+<section>
+    <h2>Oppgave 3</h2>
+    <p>Lag et input-felt i en HTML-side. Lag et JavaScript som leser dataene fra
+        input-feltet når det er endringer i feltet (hendelsen "onChange")
+        og som skriver disse dataene ut på en blank side med "document.write".
+        Funksjonen som kalles ved "onChange" skal ta en inn-parameter,
+        som er verdien av input-feltet.</p>
+    <label for="name">Skriv inn navnet ditt: </label>
+    <input onchange="write(this.value);" type="text" id="name" value=""/>
+</section>
+
+
 
 </body>
 </html>

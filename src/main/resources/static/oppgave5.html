@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type="text/javascript">
-        function visNavn() {
-            let navnet = document.getElementById("inn").value;
-            alert(navnet)
+        function visNavn(data) {
             console.log(navnet)
         }
 
     </script>
 </head>
 <body>
-<h2>Oppgave 5</h2>
-<p>Utvid oppgave 4 med å skrive informasjonen fra input-feltet til
-    "console.log". Sjekk at dataene blir skrevet til loggen.</p>
-<p>Skriv inn navn:</p>
-<input type="text" onchange="visNavn()" id="inn"/>
-<div id="navn"></div>
+<section>
+    <h2>Oppgave 5</h2>
+    <p>Utvid oppgave 4 med å skrive informasjonen fra input-feltet til
+        "console.log". Sjekk at dataene blir skrevet til loggen.</p>
+    <label for="inn">Skriv inn ditt navn: </label>
+    <input onchange="visNavn(this.value)" type="text" id="inn"/>
+</section>
+
 </body>
 </html>

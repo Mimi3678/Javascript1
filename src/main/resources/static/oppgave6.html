@@ -5,19 +5,20 @@
     <title>Title</title>
     <!--JavaScript-->
     <script type="text/javascript">
-        function visNavn() {
-            let navnet = document.getElementById("inn").value;
-            document.getElementById("navn").innerText = navnet;
-            navnet = navnet.fontcolor("red");
-            document.write(navnet);
+        function visNavn(input) {
+            input = input.fontcolor("red")
+            document.write(input);
         }
     </script>
 </head>
 <body>
-<h2>Oppgave 6</h2>
-<p>Utvid oppgave 3 ved å gi et farge til teksten som vises på blank side.</p>
-<p>Skriv inn navn:</p>
-<input type="text" onchange="visNavn()" id="inn"/>
-<div id="navn"></div>
+
+<section>
+    <h2>Oppgave 6</h2>
+    <p>Utvid oppgave 3 ved å gi et farge til teksten som vises på blank side.</p>
+    <label for="inn">Skriv inn navnet ditt: </label>
+    <input type="text" onchange="visNavn(this.value)" id="inn"/>
+</section>
+
 </body>
 </html>

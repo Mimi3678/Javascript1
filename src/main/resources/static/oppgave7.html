@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type="text/javascript">
-        function visNavn() {
-            let navnet = document.getElementById("inn").value;
-            alert(navnet.toUpperCase());
+        function visNavn(input) {
+            input = input.toUpperCase()
+            alert(input);
 
 
         }
     </script>
 </head>
 <body>
-<h2>Oppgave 7</h2>
-<p>Utvid oppgave 4 ved å vise input i alert boks i store bokstaver.</p>
-<p>Skriv inn navn:</p>
-<input type="text" onchange="visNavn()" id="inn"/>
-<div id="navn"></div>
+
+<section>
+    <h2>Oppgave 7</h2>
+    <p>Utvid oppgave 4 ved å vise input i alert boks i store bokstaver.</p>
+    <label for="inn">Skriv inn navn:</label>
+    <input type="text" onchange="visNavn(this.value)" id="inn"/>
+</section>
+
 </body>
 </html>
